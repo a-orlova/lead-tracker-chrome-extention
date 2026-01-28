@@ -1,29 +1,13 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js"
-<<<<<<< HEAD
-import { getDatabase, 
-         ref,
-         push,
-         onValue,
-         remove
- } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js"
-=======
-import { getDataBase } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js"
->>>>>>> c8256abfe8ab2639afe67100f58f4ab802ac7818
+import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-database.js"
 
 const firebaseConfig = {
     databaseURL: "https://leads-tracker-app-b5d9b-default-rtdb.europe-west1.firebasedatabase.app/"
 }
 
-<<<<<<< HEAD
 const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
 const referenceInDB = ref(database, 'leads')
-=======
-const app = initializeApp(firebaseConfig);
-const database = getDataBase(app)
-
-let myLeads = []
->>>>>>> c8256abfe8ab2639afe67100f58f4ab802ac7818
 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
